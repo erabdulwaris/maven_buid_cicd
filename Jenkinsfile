@@ -1,4 +1,4 @@
-pipeline{
+nodes(){
 
 	triggers { pollSCM 'H/5 * * * *' }
 	

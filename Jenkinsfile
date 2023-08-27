@@ -1,5 +1,7 @@
-node(){
+pipeline{
 
+	triggers { pollSCM 'H/5 * * * *' }
+	
 	//def sonarHome = tool name: 'SonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
 	
 	stage('Code Checkout'){

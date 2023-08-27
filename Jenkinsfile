@@ -1,4 +1,4 @@
-nodes(){
+node(){
 
 	triggers { pollSCM 'H/5 * * * *' }
 	

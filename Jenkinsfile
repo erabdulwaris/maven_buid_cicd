@@ -15,6 +15,6 @@ node(){
 	}
 	
 	stage('Code Deployment'){
-		deploy adapters: [tomcat9(credentialsId: 'tomcatcrd', path: '', url: 'http://192.168.100.62:8080/')], contextPath: 'hello', onFailure: false, war: 'target/*.war'
+		deploy adapters: [tomcat9(credentialsId: 'tomcatcrd', path: '', url: 'http://localhost:8080/')], contextPath: 'hello', onFailure: false, war: 'target/*.war'
 	}
 }
